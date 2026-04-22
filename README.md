@@ -14,10 +14,13 @@ Latency is ~6–8 seconds (typical HLS). Good enough for checking in on a pet; n
 ## Requirements
 
 - macOS (uses `avfoundation`, `caffeinate`, `h264_videotoolbox`)
-- [`ffmpeg`](https://formulae.brew.sh/formula/ffmpeg) — `brew install ffmpeg`
-- [`cloudflared`](https://formulae.brew.sh/formula/cloudflared) — `brew install cloudflared`
+- [Homebrew](https://brew.sh) (install it if you don't have it)
+- `ffmpeg` and `cloudflared`:
+  ```sh
+  brew install ffmpeg cloudflared
+  ```
 - Python 3 (already on macOS)
-- Camera + microphone permission for your terminal (System Settings → Privacy & Security)
+- **Camera + microphone permission for the specific terminal app you'll run the script from** — e.g. Terminal.app, iTerm, or VS Code's integrated terminal. macOS grants these per-app, not per-script, so if you launch from iTerm, it's iTerm that needs the permission (not Python, not ffmpeg). Grant via System Settings → Privacy & Security → Camera / Microphone.
 
 ## Usage
 
